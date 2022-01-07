@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      input:nth-child(2) {
+        background-color: blue;
+      }
+
+      li:nth-child(2) {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>home</li>
+      <li>about</li>
+      <li>courses</li>
+      <li>contact</li>
+    </ul>
+
+    <h1 class="sub-heading">outside welcome to js</h1>
+
+    <div class="div-parent">
+      <h1 class="sub-heading">Welcome to js</h1>
+    </div>
+    <ul>
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+    </ul>
+
+    <button>submit</button>
+    <script>
+      //   const ulparent = document.querySelector("ul");
+      //   const list = document.querySelectorAll("li");
+      //   console.log(list);
+      //   console.log(ulparent);
+      //   console.log(ulparent.childNodes);
+      //   console.log(ulparent.children);
+      //   console.log(ulparent.firstChild);
+      //   console.log(ulparent.lastChild);
+
+      //   const newitem = document.querySelector(".sub-heading");
+      //   console.log(newitem);
+
+      //   const newitem = document.querySelector(".div-parent .sub-heading");
+      //   console.log(newitem);
+      //   console.log(newitem.parentElement);
+      //   console.log(newitem.parentElement.parentElement);
+      //   console.log(newitem.parentElement.parentElement.parentElement);
+
+      //   here we need selkect nth child in ul
+      //   var listag = document.querySelector("li:nth-child(3)");
+      //   listag.style.color = "blue";
+      //   listag.style.background = "green";
+      //   console.log(listag);
+
+      const value = document.querySelector(".sub-heading");
+      const button = document.querySelector("button");
+      console.log(button);
+
+      function updateValue() {
+        value.textContent = "welcome to javascript course";
+      }
+
+      button.addEventListener("click", updateValue);
+    </script>
+  </body>
+</html>

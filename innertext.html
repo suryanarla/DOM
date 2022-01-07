@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>First Heading</h1>
+    <script>
+      // prepend
+      // innerText
+      var heading = document.createElement("h2");
+      heading.innerText = "I am dynamic heading";
+      //   document.body.appendChild(heading);
+      document.body.prepend(heading);
+
+      const smallheading = "<h6>I am small and easy way</h6>";
+      document.body.insertAdjacentHTML("afterend", smallheading);
+    </script>
+  </body>
+</html>

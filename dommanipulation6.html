@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var samplediv = document.createElement("div");
+      var text = document.createTextNode("A sample div");
+      samplediv.appendChild(text);
+
+      document.body.appendChild(samplediv);
+
+      var heading = document.createElement("h2");
+      //   <h2></h2>
+      var headingtext = document.createTextNode(" i am data");
+      //   I am heading 2
+      heading.appendChild(headingtext);
+      //   <h2> I am heading 2</h2>
+
+      samplediv.appendChild(heading);
+
+      console.log(object);
+    </script>
+  </body>
+</html>

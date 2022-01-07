@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="surya">surya</h1>
+    <h2 id="venkat">venkat</h2>
+    <h3 class="surya">surya 2</h3>
+    <h4 class="surya">surya 3</h4>
+    <p>hello</p>
+    <p>hai</p>
+    <p>data</p>
+
+    <script>
+      //   var s = document.querySelector(".surya");
+      //   console.log(s);
+
+      var s = document.querySelectorAll(".surya");
+      //   console.log(s);
+      //   console.log(...s);
+
+      var d = [...s];
+      d.forEach((element) => {
+        console.log(element);
+      });
+
+      var d = document.querySelector("#venkat");
+      console.log(d);
+
+      //   var t = document.querySelector("p");
+      //   console.log(t);
+
+      //   var t = document.querySelectorAll("p");
+      //   console.log(...t);
+      //   console.log([...t]);
+
+      //   var t1 = [...t];
+      //   t1.forEach((element) => {
+      //     console.log(element);
+      //   });
+
+      var t = document.querySelector("p:nth-child(2)");
+      console.log(t);
+    </script>
+  </body>
+</html>

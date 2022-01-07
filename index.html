@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div id="result">
+      <h1 class="red">I am child result</h1>
+    </div> -->
+    <script>
+      // createElement
+      // createTextNode
+      // appendChild
+
+      //   var s = document.querySelector("#result");
+      //   console.log(s);
+
+      //   var bodydiv = document.createElement("div");
+      //   var text = document.createTextNode("hello all");
+      //   bodydiv.appendChild(text);
+      //   document.body.appendChild(bodydiv);
+
+      //   insert before
+
+      var div = document.createElement("div");
+
+      var p1 = document.createElement("p");
+      var t1 = document.createTextNode("I am data 1");
+      p1.appendChild(t1);
+      div.appendChild(p1);
+
+      var p2 = document.createElement("p");
+      var t2 = document.createTextNode("I am data 2");
+      p2.appendChild(t2);
+      div.appendChild(p2);
+
+      var p3 = document.createElement("p");
+      var t3 = document.createTextNode("I am data 3");
+      p3.appendChild(t3);
+      div.appendChild(p3);
+
+      var smallh = document.createElement("h6");
+      var smallt = document.createTextNode("small heading");
+      smallh.appendChild(smallt);
+      div.appendChild(smallh);
+      document.body.appendChild(div);
+
+      div.insertBefore(p3, p1);
+      //   p3-which element variable p1-which element vaiable location
+
+      document.body.replaceChild(p3, smallh);
+    </script>
+  </body>
+</html>

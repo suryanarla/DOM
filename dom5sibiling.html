@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li id="first">first item 1</li>
+      <li>second item 2</li>
+      <li>third item 3</li>
+      <li id="last">last item 4</li>
+    </ul>
+
+    <h1 id="main-heading">Javascript course</h1>
+
+    <script>
+      //   const value = document.querySelector("#first");
+      //   console.log(value);
+
+      //   white spaces text will get because of childnode concept
+      //   const second = value.nextSibling;
+      //   const second = value.nextSibling.nextSibling;
+      //   const second =
+      //     value.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling
+      //       .nextSibling;
+      //   console.log(second);
+
+      //   const last = document.getElementById("last");
+      //   console.log(last);
+
+      //   third item will get why because it selects from last item 4 to previous sibiling
+      //   const third = last.previousSibling;
+      //   const third = last.previousSibling.previousSibling;
+      //   const third = last.previousSibling.previousSibling.previousSibling;
+      //   console.log(third);
+
+      //   nextElementSibiling will direct elements without spaces
+      //
+
+      const value = document.getElementById("main-heading");
+
+      //   to get the text from element in previous days we use childnodes
+      //   console.log(value.childNodes);
+      console.log(value.childNodes[0].nodeValue);
+      console.log(value.firstChild.nodeValue);
+
+      const easyval = value.textContent;
+      console.log(easyval);
+      //   to change textcontent
+      var s = (value.textContent = "surya");
+      console.log(s);
+    </script>
+  </body>
+</html>

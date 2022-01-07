@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li class="first" id="special" data-name="hello-link">
+        I have class of first
+      </li>
+      <a class="first" href="helllo">random link</a>
+      <li>I have no attributes</li>
+    </ul>
+    <script>
+      //    getAttribute
+      // SetAttribute
+
+      //    here queryselectorall selects  element which has the exact class name
+      //   var first = document.querySelector(".first");
+      //   console.log(first);
+
+      //   here queryselectorall selects all the elements which has the exact class name
+      //   var first = document.querySelectorAll(".first");
+      //   console.log(first);
+
+      //   var special = document.querySelector("#special");
+      //   console.log(special);
+
+      //   getAttribute
+
+      //   var classval = first.getAttribute("class");
+      //   console.log(classval);
+
+      //   var classval = first.getAttribute("id");
+      //   console.log(classval);
+
+      var div = document.createElement("div");
+      div.classList.add("surya", "venkat", "narayana");
+      div.setAttribute("id", "hai");
+      document.body.appendChild(div);
+      console.log(div);
+
+      // class names will displayed to particular element.
+      var classtemp = div.getAttribute("class");
+      console.log(classtemp);
+
+      // id names will be displayed to particular element.
+      var classtemp1 = div.getAttribute("id");
+      console.log(classtemp1);
+
+      // var classtemp2 = div.getAttribute("data-name");
+      // console.log(classtemp2);
+
+      var link = div.nextElementSibling;
+      console.log(link.getAttribute("href"));
+    </script>
+  </body>
+</html>
